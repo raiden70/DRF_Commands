@@ -1,0 +1,39 @@
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+class {{className}}List(APIView):
+
+    def get(self, request, format=None):
+        serializer_context={}
+        required_scopes = []
+        permission_classes=[]
+        serializer = None
+        return Response({"Message":"Hello world!"})
+
+    def post(self, request, format=None):
+        serializer_context={}
+        required_scopes = []
+        permission_classes=[]
+        serializer = None
+        return Response({"Message":"Hello world!"})
+
+class {{className}}Detail(APIView):
+
+    def get(self, request, pk, format=None):
+        serializer_context={}
+        required_scopes = []
+        permission_classes=[]
+        serializer = None
+        return Response({"pk":pk})
+
+    def put(self, request, pk, format=None):
+        required_scopes = []
+        permission_classes=[]
+        serializer = None
+        return Response({"pk":pk})
+
+    def delete(self, request, pk, format=None):
+        required_scopes = []
+        permission_classes=[]
+        return Response({"pk":pk})
+

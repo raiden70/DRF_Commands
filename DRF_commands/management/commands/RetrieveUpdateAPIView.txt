@@ -1,0 +1,16 @@
+from rest_framework.generics import RetrieveUpdateAPIView
+
+#Used for: Retrieve-Update endpoints. (provides get,put,patch method handler)
+class {{className}}RetrieveUpdate(RetrieveUpdateAPIView):
+    required_scopes = []
+    permission_classes=[]
+    queryset=None
+    serializer_class = None
+'''
+    #uncomment those methods to customize your results.
+    def perform_update(self, serializer):
+        pass
+
+    def get_queryset(self, request):
+        pass
+'''

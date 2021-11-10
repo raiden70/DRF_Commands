@@ -1,0 +1,8 @@
+from rest_framework import serializers
+
+class {{className}}Serial(serializers.ModelSerializer):
+
+    class Meta:
+        model=None #import your model first
+        # you can set is like fields=['field1','field2',..] or use exclude=[]
+        fields='__all__'

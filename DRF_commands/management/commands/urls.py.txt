@@ -1,0 +1,10 @@
+# the urls.py of the application [[AppName]]
+
+from django.urls import path
+from . import views
+
+app_name='[[AppName]]'
+
+urlpatterns =[
+    #path('endpoint/',call your view here,name='name your view here'),
+]

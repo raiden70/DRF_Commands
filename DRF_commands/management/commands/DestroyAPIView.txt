@@ -1,0 +1,16 @@
+from rest_framework.generics import DestroyAPIView
+
+#Used for: Destroy-only endpoints. (provides delete method handler)
+class {{className}}Destroy(DestroyAPIView):
+    required_scopes = []
+    permission_classes=[]
+    queryset=None
+    serializer_class = None
+'''
+    #uncomment those methods to customize your results.
+    def perform_destroy(self, serializer):
+        pass
+
+    def get_queryset(self, request):
+        pass
+'''

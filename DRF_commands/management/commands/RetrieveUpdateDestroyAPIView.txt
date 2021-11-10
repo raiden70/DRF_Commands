@@ -1,0 +1,19 @@
+from rest_framework.generics import RetrieveUpdateDestroyAPIView
+
+#Used for: Retrieve-Update-destroy endpoints. (provides get,put,patch,delete method handler)
+class {{className}}RetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
+    required_scopes = []
+    permission_classes=[]
+    queryset=None
+    serializer_class = None
+'''
+    #uncomment those methods to customize your results.
+    def perform_update(self, serializer):
+        pass
+
+    def perform_destroy(self, serializer):
+        pass
+
+    def get_queryset(self, request):
+        pass
+'''

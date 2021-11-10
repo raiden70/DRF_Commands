@@ -1,0 +1,16 @@
+from rest_framework.generics import ListCreateAPIView
+
+#Used for: ListCreate endpoints. (provides get,post method handler)
+class {{className}}ListCreate(ListCreateAPIView):
+    required_scopes = []
+    permission_classes=[]
+    queryset=None
+    serializer_class = None
+'''
+    #uncomment those methods to customize your results.
+    def perform_create(self, serializer):
+        pass
+
+    def get_queryset(self, request):
+        pass
+'''

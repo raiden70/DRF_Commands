@@ -1,0 +1,12 @@
+from rest_framework.generics import CreateAPIView
+
+#Used for: create-only endpoints. (provides post method handler)
+class {{className}}Create(CreateAPIView):
+    required_scopes = []
+    permission_classes=[]
+    serializer_class = None
+'''
+    #uncomment this method to customize your results.
+    def perform_create(self, serializer):
+        pass
+'''

@@ -1,0 +1,16 @@
+from rest_framework.generics import UpdateAPIView
+
+#Used for: Update-only endpoints. (provides put,patch method handler)
+class {{className}}Update(UpdateAPIView):
+    required_scopes = []
+    permission_classes=[]
+    queryset=None
+    serializer_class = None
+'''
+    #uncomment those methods to customize your results.
+    def perform_update(self, serializer):
+        pass
+
+    def get_queryset(self, request):
+        pass
+'''

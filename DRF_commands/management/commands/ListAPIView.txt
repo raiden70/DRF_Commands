@@ -1,0 +1,13 @@
+from rest_framework.generics import ListAPIView
+
+#Used for: List endpoints. (provides get method handler)
+class {{className}}List(ListAPIView):
+    required_scopes = []
+    permission_classes=[]
+    queryset=None
+    serializer_class = None
+'''
+    #uncomment this method to customize your results.
+    def get_queryset(self, request):
+        pass
+'''
